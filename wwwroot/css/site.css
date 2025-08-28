@@ -1,0 +1,205 @@
+/* General Body and Layout */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+/* Home Page Background and Search Overlay */
+.main-background {
+    background-image: url('/images/background-staygo.png'); /* Ruta corregida */
+    background-size: cover;
+    background-position: center;
+    width: 100%; /* Asegura que ocupe todo el ancho disponible */
+    height: 100vh; /* Asegura que ocupe toda la altura de la ventana del navegador */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.search-overlay {
+    /* Aquí está el cambio clave: rgba(rojo, verde, azul, alfa) */
+    /* 0.85 significa 85% de opacidad, 15% de transparencia */
+    background-color: rgba(255, 255, 255, 0.7); /* Puedes ajustar 0.7 (70% opacidad) al valor que prefieras */
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 90%;
+    max-width: 600px;
+}
+
+.search-overlay h2 {
+    margin-bottom: 25px;
+    font-weight: normal;
+    font-size: 2em;
+    color: #333;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555;
+    font-size: 0.9em;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    box-sizing: border-box;
+}
+
+.date-inputs {
+    display: flex;
+    gap: 15px;
+}
+
+.date-group {
+    flex: 1;
+}
+
+.number-inputs {
+    display: flex;
+    gap: 20px;
+    justify-content: space-around;
+}
+
+.number-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.number-counter {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.number-counter input {
+    width: 50px;
+    text-align: center;
+    border: none;
+    font-size: 1.1em;
+}
+
+.number-counter button {
+    background-color: #f0f0f0;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 1.2em;
+    width: 30px;
+}
+
+.btn-search {
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px 40px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-top: 25px;
+    transition: background-color 0.3s;
+}
+
+.btn-search:hover {
+    background-color: #45a049;
+}
+
+/* Login and Register Forms */
+.form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f0f2f5;
+}
+
+.form-container h2 {
+    font-size: 2.2em;
+    margin-bottom: 20px;
+}
+
+.form-container form {
+    background-color: white;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+.form-container input {
+    width: calc(100% - 24px);
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+    font-size: 1em;
+}
+
+.btn-submit {
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1.1em;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.link-to-login, .forgot-password {
+    display: block;
+    margin-top: 15px;
+    text-decoration: none;
+    color: #007bff;
+    font-size: 0.9em;
+}
+/* Estilos para la barra de navegación */
+.navbar {
+    background-color: white !important; /* Asegura que el fondo sea blanco */
+    padding: 10px 0; /* Ajusta el padding vertical si es necesario */
+}
+
+.navbar-brand {
+    font-size: 1.8em; /* Tamaño del texto del logo */
+    font-weight: bold;
+    color: #333 !important;
+    margin-left: 20px; /* Margen a la izquierda del logo */
+}
+
+.navbar-nav .nav-link {
+    font-size: 1.1em;
+    padding: 8px 15px; /* Ajusta el padding de los enlaces */
+}
+
+/* Estilo para el ícono de usuario */
+.navbar-nav .nav-item .fa-user-circle {
+    color: #555; /* Un color más oscuro para el ícono */
+    margin-right: 20px; /* Margen a la derecha del ícono */
+}
+
+.navbar-nav .nav-item .nav-link:hover .fa-user-circle {
+    color: #007bff; /* Color al pasar el mouse por encima del ícono */
+}
